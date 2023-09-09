@@ -22,4 +22,6 @@ from index import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index),
+    path('waiting/',views.waiting_view, name='waiting'),
+    path('chatbot/', views.ChatbotView.as_view(), name = 'chatbot'),
 ]
